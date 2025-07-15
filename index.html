@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gerador de Streaming</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎬 Gerador de Episódios Streaming</h1>
+  </header>
+
+  <main>
+    <label for="qtdEp">Quantidade de episódios:</label>
+    <select id="qtdEp">
+      <option value="12">12 episódios</option>
+      <option value="24">24 episódios</option>
+      <option value="36">36 episódios</option>
+      <option value="50">50 episódios</option>
+      <option value="100">100 episódios</option>
+      <option value="250">250 episódios</option>
+      <option value="500">500 episódios</option>
+      <option value="1000">1000 episódios</option>
+    </select>
+
+    <label for="filemoon">Links Filemoon:</label>
+    <textarea id="filemoon" rows="8" placeholder="1 link por linha..."></textarea>
+
+    <label for="streamtape">Links Streamtape:</label>
+    <textarea id="streamtape" rows="8" placeholder="1 link por linha..."></textarea>
+
+    <label for="dood">Links DoodStream:</label>
+    <textarea id="dood" rows="8" placeholder="1 link por linha..."></textarea>
+
+    <button id="gerarScript">🎬 Gerar Script</button>
+
+    <h3>Resultado:</h3>
+    <textarea id="saidaScript" rows="20" readonly></textarea>
+
+    <button id="copiarCodigo">📋 Copiar código</button>
+    <button id="baixarCodigo">💾 Baixar como .txt</button>
+<div id="avisoFaltando" style="margin-top:20px;"></div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
